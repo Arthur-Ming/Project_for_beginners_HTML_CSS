@@ -170,11 +170,6 @@ aside#sidebar .quote textarea {
   padding: 5px;
 }
 
-aside#sidebar .quote textarea {
-  width: 90%;
-  padding: 5px;
-}
-
 /* Footer */
 
 footer {
@@ -183,4 +178,41 @@ footer {
   color: #fff;
   background-color: #e8491d;
   text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h2,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h2 {
+    margin-top: 40px;
+    font-size: 45px;
+  }
+
+  #newsletter .button_1,
+  aside#sidebar .button_1 {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter input[type="email"] {
+    margin-bottom: 5px;
+    width: 100%;
+  }
 }
